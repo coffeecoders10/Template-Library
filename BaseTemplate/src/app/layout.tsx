@@ -1,16 +1,27 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Poppins, Josefin_Sans, Great_Vibes } from "next/font/google";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v16-appRouter";
 import Providers from "./providers";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+// Primary font — Poppins (body, UI)
+const poppins = Poppins({
+  variable: "--font-primary",
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+// Secondary font — Josefin Sans (headings, display)
+const josefinSans = Josefin_Sans({
+  variable: "--font-secondary",
   subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
+// Tertiary font — Great Vibes (accent / decorative)
+const greatVibes = Great_Vibes({
+  variable: "--font-tertiary",
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -27,7 +38,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html
+      lang="en"
+      className={`${poppins.variable} ${josefinSans.variable} ${greatVibes.variable}`}
+    >
       <body>
         <AppRouterCacheProvider>
           <Providers>{children}</Providers>

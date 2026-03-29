@@ -37,7 +37,7 @@ export default function StatCard({
         gap: 2,
         p: 3,
         borderRadius: 2,
-        bgcolor: 'background.paper',
+        bgcolor: 'background.default',
         border: '1px solid',
         borderColor: 'divider',
         ...sx,

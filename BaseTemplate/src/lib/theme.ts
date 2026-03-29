@@ -3,6 +3,15 @@
 import { createTheme } from "@mui/material/styles";
 
 const theme = createTheme({
+  typography: {
+    fontFamily: "var(--font-primary), sans-serif",
+    h1: { fontFamily: "var(--font-secondary), sans-serif" },
+    h2: { fontFamily: "var(--font-secondary), sans-serif" },
+    h3: { fontFamily: "var(--font-secondary), sans-serif" },
+    h4: { fontFamily: "var(--font-secondary), sans-serif" },
+    h5: { fontFamily: "var(--font-secondary), sans-serif" },
+    h6: { fontFamily: "var(--font-secondary), sans-serif" },
+  },
   palette: {
     mode: "dark",
     primary: {

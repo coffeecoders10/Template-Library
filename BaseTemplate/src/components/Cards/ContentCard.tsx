@@ -31,7 +31,7 @@ export default function ContentCard({
         gap: 1.5,
         p: 3,
         borderRadius: 2,
-        bgcolor: 'background.paper',
+        bgcolor: 'background.default',
         border: '1px solid',
         borderColor: 'divider',
         borderLeft: '4px solid',

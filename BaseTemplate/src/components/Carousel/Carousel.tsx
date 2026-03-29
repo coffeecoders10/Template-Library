@@ -126,9 +126,9 @@ function InteractionCarousel({
                 left: 8,
                 top: '50%',
                 transform: 'translateY(-50%)',
-                bgcolor: 'background.paper',
+                bgcolor: 'background.default',
                 boxShadow: 2,
-                '&:hover': { bgcolor: 'background.paper' },
+                '&:hover': { bgcolor: 'background.default' },
                 zIndex: 1,
               }}
             >
@@ -142,9 +142,9 @@ function InteractionCarousel({
                 right: 8,
                 top: '50%',
                 transform: 'translateY(-50%)',
-                bgcolor: 'background.paper',
+                bgcolor: 'background.default',
                 boxShadow: 2,
-                '&:hover': { bgcolor: 'background.paper' },
+                '&:hover': { bgcolor: 'background.default' },
                 zIndex: 1,
               }}
             >
